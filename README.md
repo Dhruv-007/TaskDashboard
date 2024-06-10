@@ -46,6 +46,27 @@ cd task-manager
   ```bash
    npm install @reduxjs/toolkit react-redux
    ```
+4. Install Tailwind CSS
+
+   Tailwind CSS can be installed via npm or yarn. Follow the steps below:
+```bash
+npm install -D tailwindcss
+npx tailwindcss init
+```
+5. Configure Tailwind CSS
+ ```bash
+    Update tailwind.config.js with the following content:
+   /** @type {import('tailwindcss').Config} */
+   module.exports = {
+   content: [
+    "./src/**/*.{js,ts,jsx,tsx}",
+   ],
+   theme: {
+     extend: {},
+    },
+    plugins: [],
+    }
+ ```
 
 ## Running the Application
   1. Start the development server:
